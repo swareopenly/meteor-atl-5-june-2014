@@ -1,0 +1,1 @@
+Penguins = new Meteor.Collection("penguins");

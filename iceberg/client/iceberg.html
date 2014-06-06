@@ -1,0 +1,27 @@
+<head>
+  <title>iceberg</title>
+</head>
+
+<body>
+    {{> penguins}}
+</body>
+
+<template name='penguins'>
+    <div class="penguins">
+        <div class="hungry-penguins">
+            <h1>Hungry!</h1>
+            {{#each hungryPenguins}}
+            <div class="hungry">{{name}}</div>
+            {{/each}}
+            <button id="feed">Feed</button>
+        </div>
+        <div class="full-penguins">
+            <h1>Full penguins</h1>
+            {{#each fullPenguins}}
+            <div class="full">{{name}}</div>
+            {{/each}}
+        </div>
+    </div>
+</template>
+
+
